@@ -1,9 +1,9 @@
 -- Onncera's personal remaps
 --
 --
--- Set <space> as the leader key
--- See `:help mapleader`
--- NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
+--		Set <space> as the leader key
+--		See `:help mapleader`
+--		NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader      = " "
 vim.g.maplocalleader = ","
 
@@ -13,13 +13,10 @@ vim.g.maplocalleader = ","
 --    See `:help vim.keymap.set()`
 --
 --
--- Replacement == `kk' or `jj' or emacs's way to `ESC'
--- Remap `TAB'
-vim.keymap.set("i", "<C-c>", "<Esc>")
-vim.keymap.set("i", "kk", "<Esc>")
-vim.keymap.set("i", "jj", "<Esc>:w<CR>")
-vim.keymap.set("n", "<Tab>", "$")
-vim.keymap.set("v", "<Tab>", "$")
+vim.keymap.set("i", "kk",    "<Esc>")        -- remap `kk' == `ESC'
+vim.keymap.set("i", "jj",    "<Esc>:w<CR>")  -- remap `jj' == `ESC'
+vim.keymap.set("n", "<Tab>", "$")            -- remap `TAB' == JUMP TO EOL
+vim.keymap.set("v", "<Tab>", "$")            -- remap `TAB' == JUMP TO EOL
 
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
