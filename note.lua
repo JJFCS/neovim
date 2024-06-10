@@ -1,4 +1,3 @@
-
 --[[
 
 	Simple guide for Lua (https://learnxinyminutes.com/docs/lua/)
@@ -11,6 +10,7 @@
 	MOST IMPORTANTLY, we provide a keymap "<space>sh" to [s]earch the [h]elp documentation
 
 --]]
+
 
 
 --[[
