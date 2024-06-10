@@ -1,12 +1,3 @@
--- TODO set up colorscheme
-
-
-
-
-
-
-
-
 return {
 
 	{
@@ -41,17 +32,4 @@ return {
 			end,
 	},
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 

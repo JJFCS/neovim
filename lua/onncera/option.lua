@@ -40,9 +40,6 @@ vim.opt.undolevels     = 5000                   -- Setting the maximum no. of ch
 vim.opt.ignorecase     = true                   -- Case-insensitive searching UNLESS \C
 vim.opt.smartcase      = true                   -- or one or more capital letters in the search term
 
-vim.opt.guicursor      = ""
-vim.opt.termguicolors  = true
-
 vim.opt.updatetime     = 250                    -- Reduce update time
 vim.opt.timeoutlen     = 5000                   -- Rise in time to complete your keybind combination (default == 1000)
 
@@ -50,6 +47,7 @@ vim.opt.timeoutlen     = 5000                   -- Rise in time to complete your
 vim.opt.colorcolumn    = "80"                   -- Reference to not write code longer than 80 characters
 vim.opt.scrolloff      =  10                    -- Screen lines (minimum amount) to keep above and below the cursor
 vim.opt.signcolumn = "yes"
+vim.opt.guicursor  = ""
 vim.opt.wrap = false
 
 
