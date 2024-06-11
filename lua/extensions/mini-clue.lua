@@ -37,6 +37,10 @@ return {
 					{ mode = 'x', keys = 'z' },
 				},
 
+				-- Customising the width & location of popup window
+				window = {
+					config = { width = 50, row = 10, col = 265, },
+				},
 
 				clues = {
 					-- Enhance this by adding descriptions for <Leader> mapping groups
