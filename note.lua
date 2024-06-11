@@ -22,8 +22,5 @@
 		Onncera's personal options
 			Find a better setup without sharing both neovim's & system's clipboard (primeagen remaps)
 			Sanction netrw settings once you are more comfortable using it
-
-		Onncera's personal remaps
-			Find a better remap for <esc>
 --]]
 
