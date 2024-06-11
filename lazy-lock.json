@@ -2,8 +2,9 @@
   "harpoon": { "branch": "harpoon2", "commit": "0378a6c428a0bed6a2781d459d7943843f374bce" },
   "lazy.nvim": { "branch": "main", "commit": "fafe1f7c640aed75e70a10e6649612cd96f39149" },
   "mini.base16": { "branch": "main", "commit": "bc8bceda36c6e979e22b637305d1962afe0120ff" },
+  "mini.clue": { "branch": "main", "commit": "629f7ddb071faf8eba77c5c56a295a0a206df94c" },
   "nvim-treesitter": { "branch": "master", "commit": "9a7ad2ff7a7ea81016aca2fc89c9b2c1a5365421" },
   "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
-  "trouble.nvim": { "branch": "main", "commit": "57b50a6dc129f3a82c3bdd9f81b9f2d4e770ac09" },
+  "trouble.nvim": { "branch": "main", "commit": "483eb2d7590b3b87cf159e3bdf96170eaaa361e8" },
   "undotree": { "branch": "master", "commit": "56c684a805fe948936cda0d1b19505b84ad7e065" }
 }
