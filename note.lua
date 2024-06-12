@@ -15,8 +15,12 @@
 
 --[[
 	TODOS
-		Extensions to include
+		Extensions to include/improve
 			copilot.vim
+			completions
+			language server protocol
+				Telescope
+				Treesitter
 
 
 		Onncera's personal options

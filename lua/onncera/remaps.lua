@@ -13,10 +13,21 @@ vim.g.maplocalleader = ","
 --    See `:help vim.keymap.set()`
 --
 --
-vim.keymap.set("i", "jk",    "<Esc>")        -- remap `jk' == `ESC'
-vim.keymap.set("i", "kj",    "<Esc>")        -- remap `kj' == `ESC'
-vim.keymap.set("n", "<Tab>", "$")            -- remap `TAB' == JUMP TO EOL
-vim.keymap.set("v", "<Tab>", "$")            -- remap `TAB' == JUMP TO EOL
+vim.keymap.set("i", "jk",    "<Esc>")  -- remap `jk' == `ESC'
+vim.keymap.set("i", "kj",    "<Esc>")  -- remap `kj' == `ESC'
+vim.keymap.set("n", "<Tab>", "$")      -- remap `TAB' == JUMP TO EOL
+vim.keymap.set("v", "<Tab>", "$")      -- remap `TAB' == JUMP TO EOL
+
+
+-- emacs's like keybinding for insert mode navigation
+vim.keymap.set("i", "<C-b>", "<Left>",  { desc = "move left"              })
+vim.keymap.set("i", "<C-f>", "<Right>", { desc = "move right"             })
+vim.keymap.set("i", "<C-n>", "<Down>",  { desc = "move down"              })
+vim.keymap.set("i", "<C-p>", "<Up>",    { desc = "move up"                })
+
+vim.keymap.set("i", "<C-a>", "<ESC>^i", { desc = "move beginning of line" })
+vim.keymap.set("i", "<C-e>", "<End>",   { desc = "move end of line"       })
+
 
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
