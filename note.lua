@@ -21,6 +21,7 @@
 			language server protocol
 				Telescope
 				Treesitter
+				Fugitive & Git Signs
 
 
 		Onncera's personal options
