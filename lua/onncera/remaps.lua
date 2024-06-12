@@ -13,9 +13,8 @@ vim.g.maplocalleader = ","
 --    See `:help vim.keymap.set()`
 --
 --
-vim.keymap.set("i", "kk",    "<Esc>")        -- remap `kk' == `ESC'
 vim.keymap.set("i", "jk",    "<Esc>")        -- remap `jk' == `ESC'
-vim.keymap.set("i", "jj",    "<Esc>:w<CR>")  -- remap `jj' == `ESC'
+vim.keymap.set("i", "kj",    "<Esc>")        -- remap `kj' == `ESC'
 vim.keymap.set("n", "<Tab>", "$")            -- remap `TAB' == JUMP TO EOL
 vim.keymap.set("v", "<Tab>", "$")            -- remap `TAB' == JUMP TO EOL
 
