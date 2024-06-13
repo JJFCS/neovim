@@ -25,16 +25,8 @@ require("lazy").setup({
 
 
 -- [[ Configure and install plugins ]]
---    Check the current status of your plugins, run
---    :Lazy
---
---  Press `?` in this menu for help, use `:q` to close the window
---  Press `:Lazy update`
---  NOTE: Plugin installation (here is where you can do it)
---  NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
 
-
-	-- NOTE: Plugins can also be added by using a table
+	-- The plugins can also be added using a table
 	-- The first argument being the link
 	-- The following keys can be used to configure plugin behavior/loading/etc.
 	--

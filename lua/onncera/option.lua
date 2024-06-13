@@ -5,7 +5,7 @@
 --    See `:help vim.opt`
 --    For more options, you can see `:help option-list`
 
-NVIMUNDO = "/Users/onncera/Downloads/nvim-undo"
+NVIMUNDO = os.getenv("HOME") .. "/Downloads/nvim-undo"
 
 -- Configure how new splits should be opened
 vim.opt.splitright = true
