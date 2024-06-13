@@ -91,11 +91,10 @@ return {
 
 			vim.api.nvim_create_autocmd("LspDetach", {
 				group    = vim.api.nvim_create_augroup("onncera-lsp-detach", { clear = true }),
-				callback = function()
-					vim.lsp.buf.clear_references()
-				end
+				callback = function() vim.lsp.buf.clear_references() end
 			})
-		end
 
+
+		end
 }
 
