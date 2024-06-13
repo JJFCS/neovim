@@ -64,6 +64,16 @@ return {
 						vim.keymap.set("n", keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
 					end
 
+
+					local client = vim.lsp.get_client_by_id(event.data.client_id)  -- stores the current LSP event client ID in a variable
+					-- Following autocommand is used to enable inlay hints in your code if the language server you are using supports them
+					if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
+						map("<leader>th", function()
+							vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+						end, "[T]oggle Inlay [H]ints")
+					end
+
+
 					map("K", vim.lsp.buf.hover, "Hover Documentation")
 
 					map("gd", require("telescope.builtin").lsp_definitions, "[G]oto [D]efinition")
@@ -77,14 +87,6 @@ return {
 					map("[d", vim.diagnostic.goto_prev, "Jump to the previous diagnostic")
 					map("]d", vim.diagnostic.goto_next, "Jump to the next diagnostic")
 
-
-					local client = vim.lsp.get_client_by_id(event.data.client_id)  -- stores the current LSP event client ID in a variable
-					-- Following autocommand is used to enable inlay hints in your code if the language server you are using supports them
-					if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
-						map("<leader>th", function()
-							vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
-						end, "[T]oggle Inlay [H]ints")
-					end
 				end
 			})
 
@@ -96,5 +98,6 @@ return {
 
 
 		end
+
 }
 

@@ -15,8 +15,6 @@ vim.g.maplocalleader = ","
 --
 vim.keymap.set("i", "jk",    "<Esc>")  -- remap `jk' == `ESC'
 vim.keymap.set("i", "kj",    "<Esc>")  -- remap `kj' == `ESC'
-vim.keymap.set("n", "<Tab>", "$")      -- remap `TAB' == JUMP TO EOL
-vim.keymap.set("v", "<Tab>", "$")      -- remap `TAB' == JUMP TO EOL
 
 
 -- emacs's like keybinding for insert mode navigation
