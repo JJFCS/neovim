@@ -1,22 +1,16 @@
 
--- [[ Setting options ]]
---    See `:help vim.opt`
---    For more options, you can see `:help option-list`
-
 NVIMUNDO = os.getenv("HOME") .. "/Downloads/nvim-undo"
 
--- Configure how new splits should be opened
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
-
 -- Sets how neovim will display certain whitespace characters in the editor.
--- See `:help 'list'`
--- and `:help 'listchars'`
+-- See `:help 'list'` and `:help 'listchars'`
 vim.opt.list           = true
 vim.opt.listchars      = { tab = "» ", trail = "•", nbsp = "␣" }
 
-vim.opt.incsearch      = true                   -- Searching (incremental)
+vim.opt.incsearch      = true                   -- Search (incremental)
+vim.opt.hlsearch       = true                   -- Search (highlight)
 
 vim.opt.number         = true                   -- Enable          line numbers
 vim.opt.relativenumber = true                   -- Enable relative line numbers

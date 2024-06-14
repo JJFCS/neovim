@@ -29,10 +29,8 @@
 			copilot.vim
 			completions
 			language server protocol
-				Telescope
-				Treesitter
 				Fugitive & Git Signs
-				RSI
+			OIL
 
 		Onncera's personal options
 			Find a better setup without sharing both neovim's & system's clipboard (primeagen remaps)
