@@ -8,8 +8,6 @@ return {
 
 		config = function()
 			require('telescope').setup({})
-
-			-- enable Telescope extensions
 			pcall(require('telescope').load_extension, 'fzf')
 
 			local builtin = require('telescope.builtin')

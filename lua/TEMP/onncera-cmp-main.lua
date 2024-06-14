@@ -1,19 +1,14 @@
 return {
 
-	{ "L3MON4D3/LuaSnip",
-		build        = "make install_jsregexp",
-		dependencies = {
-			{ 'rafamadriz/friendly-snippets',
-				config = function()
-					require('luasnip.loaders.from_vscode').lazy_load()
-				end,
-			},
-		},
+	{ "L3MON4D3/LuaSnip", build = "make install_jsregexp" },
+	{ 'rafamadriz/friendly-snippets',
+			config = function()
+				require('luasnip.loaders.from_vscode').lazy_load()
+			end
 	},
 
 
-	{ "hrsh7th/nvim-cmp",
-		event  = "InsertEnter",
+	{ "hrsh7th/nvim-cmp", event = "InsertEnter",
 		config = function()
 			local cmp     = require('cmp')
 			local luasnip = require('luasnip')
@@ -59,7 +54,6 @@ return {
 					[ "<C-Space>" ] = cmp.mapping.complete({}),  -- MANUALLY TRIGGER COMPLETION
 					[   "<C-y>"   ] = cmp.mapping.confirm({ select = true }),
 				}),
-
 
 				sources = {
 					{ name = 'buffer'   },

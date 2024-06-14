@@ -1,10 +1,10 @@
 return {
 
-	-- incompetent to place cmp-cmdline in main/global cmp setup as completion sources
+	-- incompetent to place cmp-cmdline in main/global 'cmp setup' as completion sources
 	-- gets polluted with neovim variables/functions... hence, include cmp-cmdline in its own setup function
 	--
-	-- Completions for `/` search based on the current buffer
-	-- Completions for command mode
+	-- Completions for `/' search based on the current buffer
+	-- Completions for `:' command mode
 
 	{ "hrsh7th/cmp-cmdline",
 		config = function()
