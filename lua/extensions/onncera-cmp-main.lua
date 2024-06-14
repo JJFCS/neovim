@@ -39,14 +39,14 @@ return {
 					end,
 					["<C-n>"] = function(fallback)
 						if cmp.visible() then
-							cmp.mapping.scroll_docs(  4 )
+							cmp.scroll_docs(  4 )
 						else
 							fallback()
 						end
 					end,
 					["<C-p>"] = function(fallback)
 						if cmp.visible() then
-							cmp.mapping.scroll_docs( -4 )
+							cmp.scroll_docs( -4 )
 						else
 							fallback()
 						end
