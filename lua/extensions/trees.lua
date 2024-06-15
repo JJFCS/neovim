@@ -1,6 +1,8 @@
 return {
 
-	"nvim-treesitter/nvim-treesitter",
+	{ "mbbill/undotree" },
+
+	{ "nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		opts  = {
 			ensure_installed = { "c", "cpp", "lua", "luadoc", "markdown", "markdown_inline", "python", "vim", "vimdoc" },
@@ -16,6 +18,6 @@ return {
 			require("nvim-treesitter.install").prefer_git = true
 			require("nvim-treesitter.configs").setup(opts)
 		end
-
+	}
 }
 

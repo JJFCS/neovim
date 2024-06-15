@@ -3,21 +3,23 @@ vim.g.mapleader      = " "
 vim.g.maplocalleader = ","
 
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")         -- relocating items in visual mode
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")         -- relocating items in visual mode
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Primeagen: relocating items in visual mode" })
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Primeagen: relocating items in visual mode" })
 
-vim.keymap.set("i", "jk", "<Esc>")                   -- remap `jk' == <Esc>
-vim.keymap.set("i", "kj", "<Esc>")                   -- remap `kj' == <Esc>
+vim.keymap.set("n", "<leader>y", [["+y]] , { desc = "Primeagen: yank into system's clipboard" })
+vim.keymap.set("v", "<leader>y", [["+y]] , { desc = "Primeagen: yank into system's clipboard" })
+vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Primeagen: retain 'paste' buffer" })
 
-vim.keymap.set("n", "<C-d>", "<C-d>zz")              -- 1/2 page jumping while keeping cursor in the middle
-vim.keymap.set("n", "<C-u>", "<C-u>zz")              -- 1/2 page jumping while keeping cursor in the middle
+vim.keymap.set("i", "jk", "<Esc>")
+vim.keymap.set("i", "kj", "<Esc>")
 
-vim.keymap.set("x", "<leader>p", [["_dP]])           -- good remap for not losing 'paste' buffer (Primeagen)
-vim.keymap.set("n", "<leader>y", [["+y]])            -- yank into system's clipboard (normal mode)
-vim.keymap.set("v", "<leader>y", [["+y]])            -- yank into system's clipboard (visual mode)
+vim.keymap.set("n", '<leader>ut', "<cmd>UndotreeToggle<CR>", { desc = "[U]ndo   [T]ree" })
 
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")  -- clear HIGHLIGHT on pressing <Esc> in normal mode
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Primeagen: 1/2 page jumping, keep cursor center" })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Primeagen: 1/2 page jumping, keep cursor center" })
 
+
+vim.keymap.set("n", "<Esc>", "<cmd>noh<CR>")
 
 
 -- [[ Basic Autocommands ]]
