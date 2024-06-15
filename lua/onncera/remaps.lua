@@ -3,29 +3,20 @@ vim.g.mapleader      = " "
 vim.g.maplocalleader = ","
 
 
-vim.keymap.set("i", "jk", "<Esc>")  -- remap `jk' == <Esc>
-vim.keymap.set("i", "kj", "<Esc>")  -- remap `kj' == <Esc>
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")         -- relocating items in visual mode
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")         -- relocating items in visual mode
+
+vim.keymap.set("i", "jk", "<Esc>")                   -- remap `jk' == <Esc>
+vim.keymap.set("i", "kj", "<Esc>")                   -- remap `kj' == <Esc>
+
+vim.keymap.set("n", "<C-d>", "<C-d>zz")              -- 1/2 page jumping while keeping cursor in the middle
+vim.keymap.set("n", "<C-u>", "<C-u>zz")              -- 1/2 page jumping while keeping cursor in the middle
+
+vim.keymap.set("x", "<leader>p", [["_dP]])           -- good remap for not losing 'paste' buffer (Primeagen)
+vim.keymap.set("n", "<leader>y", [["+y]])            -- yank into system's clipboard (normal mode)
+vim.keymap.set("v", "<leader>y", [["+y]])            -- yank into system's clipboard (visual mode)
+
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")  -- clear HIGHLIGHT on pressing <Esc> in normal mode
-
-
-vim.keymap.set("i", "<C-f>", "<Right>"  )  -- move one character
-vim.keymap.set("i", "<C-b>", "<Left>"   )  -- move one character (backward)
-vim.keymap.set("i", "<C-n>", "<Down>"   )  -- move one character (down)
-vim.keymap.set("i", "<C-p>", "<Up>"     )  -- move one character (up)
-vim.keymap.set("i", "<C-d>", "<Del>"    )  -- kill one character (forward) (backspace 4 one character kill backward)
-
-vim.keymap.set("i", "<M-f>", "<C-Right>")  -- move by word
-vim.keymap.set("i", "<M-b>", "<C-Left>" )  -- move by word (backward)
-vim.keymap.set("i", "<C-w>", "<C-o>db"  )  -- kill by word (backward)
-vim.keymap.set("i", "<M-d>", "<C-o>dw"  )  -- kill by word
-
-vim.keymap.set("i", "<C-a>", "<Home>"   )  -- move 2 line (beginning)
-vim.keymap.set("i", "<C-e>", "<End>"    )  -- move 2 line (end)
-
-vim.keymap.set("i", "<C-u>", "<C-o>d0"  )  -- kill 2 line (beginning)
-vim.keymap.set("i", "<C-k>", "<C-o>D"   )  -- kill 2 line (end)
-
-vim.keymap.set("i", "<C-y>", '<C-r>"'   )  -- kill ring (yank / paste)
 
 
 

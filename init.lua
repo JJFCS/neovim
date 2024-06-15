@@ -1,6 +1,5 @@
 
 
-
 --[[
 
 		Mentions
@@ -21,7 +20,6 @@
 --]]
 
 
-
 --[[
 
 	TODOS
@@ -30,6 +28,7 @@
 			completions
 			language server protocol
 				Fugitive & Git Signs
+			markdown
 			OIL
 
 		Onncera's personal options
@@ -37,7 +36,6 @@
 			Sanction netrw settings once you are more comfortable using it
 
 --]]
-
 
 
 require("startup")
