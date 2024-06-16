@@ -23,30 +23,16 @@ return {
 				},
 				completion = { completeopt = "menu,menuone,noinsert" },
 				mapping = cmp.mapping.preset.insert({
-					[ "<Tab>"   ] = function(fallback)
+					["<C-n>"] = function(fallback)
 						if cmp.visible() then
 							cmp.select_next_item()
 						else
 							fallback()
 						end
 					end,
-					[ "<S-Tab>" ] = function(fallback)
-						if cmp.visible() then
-							cmp.select_prev_item()
-						else
-							fallback()
-						end
-					end,
-					["<C-n>"] = function(fallback)
-						if cmp.visible() then
-							cmp.scroll_docs(  4 )
-						else
-							fallback()
-						end
-					end,
 					["<C-p>"] = function(fallback)
 						if cmp.visible() then
-							cmp.scroll_docs( -4 )
+							cmp.select_prev_item()
 						else
 							fallback()
 						end
