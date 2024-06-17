@@ -38,6 +38,7 @@ return {
 						end
 					end,
 					[ "<C-Space>" ] = cmp.mapping.complete({}),  -- MANUALLY TRIGGER COMPLETION
+					[   "<C-e>"   ] = cmp.mapping.close(),
 					[   "<C-y>"   ] = cmp.mapping.confirm({ select = true }),
 				}),
 
