@@ -42,10 +42,6 @@ vim.keymap.set("n", "<leader>l", function() require('lint').try_lint() end, { de
 vim.keymap.set("n", '<leader>ut', "<cmd>UndotreeToggle<CR>", { desc = "[U]ndo   [T]ree" })  -- UT
 
 
-vim.keymap.set("n", "<M-t>", "<Cmd>ToggleTerm size=80 direction=float<CR>")
-vim.keymap.set("t", "<M-t>", "<Cmd>ToggleTerm size=80 direction=float<CR>")
-
-
 autocmd('LspAttach', {
 	group    = vim.api.nvim_create_augroup("onncera-lsp-attach", {}),
 	callback = function(event)

@@ -1,6 +1,9 @@
 
 
 
+
+
+
 -- instructions for setting up copilot in neovim
 --		encompass GITHUB URL into plugin manager
 --		execute :Copilot setup
@@ -12,7 +15,11 @@
 
 
 
+
+
+
 return {
+
 
 	{ "github/copilot.vim" },
 	{ "iamcco/markdown-preview.nvim",
@@ -23,13 +30,14 @@ return {
 		end
 	},
 
-	{ "akinsho/toggleterm.nvim",
-		config = function()
-			require("toggleterm").setup({})
-		end
-	},
 
 
 
 }
+
+
+
+
+
+
 
